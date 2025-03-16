@@ -24,9 +24,9 @@ This project uses [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plug
 The ESLint setup uses the modern flat config format and includes:
 
 - **typescript-eslint**: Advanced TypeScript linting with type-checking
+- **@eslint-react/eslint-plugin**: React-specific rules for better practices
 - **eslint-plugin-react-hooks**: Enforces Rules of Hooks and other best practices
 - **eslint-plugin-react-refresh**: Validates components are safe for Fast Refresh
-- **eslint-plugin-react-x** and **eslint-plugin-react-dom**: React-specific rules for better practices
 - **eslint-plugin-import**: Import/export validation with TypeScript support
 - **eslint-plugin-prettier**: Seamlessly integrates Prettier with ESLint
 
