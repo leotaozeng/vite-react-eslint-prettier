@@ -19,7 +19,8 @@ export default tseslint.config(
       importPlugin.flatConfigs.react,
       importPlugin.flatConfigs.typescript,
     ],
-    files: ['**/*.{ts,tsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx,mjsx,ts,tsx,mtsx}'],
+    ignores: ['eslint.config.js'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -31,6 +32,11 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+    },
+    settings: {
+      'import/resolver': {
+        typescript: true,
+      },
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
